@@ -1,39 +1,52 @@
 import { DefaultTheme } from "styled-components";
+import { ColorVariants } from "../types/theme";
+
+export const colors: ColorVariants = {
+  primary: {
+    main: "#d8cb13",
+    light: "#e7e073",
+    dark: "#c4b703",
+  },
+  secondary: {
+    main: "#f06c1f",
+    light: "#f79a5d",
+    dark: "#a63f00",
+  },
+  error: {
+    main: "#FF1010",
+    light: "#f88b8b",
+    dark: "#820808",
+  },
+  warning: {
+    main: "#FAC736",
+    light: "#f9d07a",
+    dark: "#a67f00",
+  },
+  info: {
+    main: "#58d5ee",
+    light: "#a3e3f7",
+    dark: "#107d93",
+  },
+  success: {
+    main: "#1fa858",
+    light: "#7bea8a",
+    dark: "#0d4a26",
+  },
+  background: {
+    main: "#F2F2F2",
+    light: "#ffffff",
+    dark: "#d9d9d9",
+  },
+  text: {
+    main: "#004793",
+    light: "#0761bf",
+    dark: "#003063",
+  },
+};
 
 export const light: DefaultTheme = {
   colors: {
-    primary: {
-      main: "#d8cb13",
-      light: "#e7e073",
-      dark: "#c4b703",
-    },
-    secondary: {
-      main: "#f06c1f",
-      light: "#f79a5d",
-      dark: "#a63f00",
-    },
-    error: {
-      main: "#FF1010",
-    },
-    warning: {
-      main: "#FAC736",
-    },
-    info: {
-      main: "#58d5ee",
-    },
-    success: {
-      main: "#1fa858",
-    },
-    background: {
-      main: "#F2F2F2",
-      light: "#ffffff",
-      dark: "#d9d9d9",
-    },
-    text: {
-      main: "#004793",
-      light: "#0761bf",
-      dark: "#003063",
-    },
+    ...colors,
     white: "#ffffff",
     black: "#000000",
   },
@@ -41,22 +54,24 @@ export const light: DefaultTheme = {
     family: {
       primary: "Inter, Roboto, sans-serif",
       secondary: "Montserrat, sans-serif",
+      code: "Roboto Mono, monospace",
     },
     size: {
-      xs: "1rem",
-      sm: "1.2rem",
-      md: "1.6rem",
-      lg: "2.4rem",
+      xs: "0.4rem",
+      sm: "0.8rem",
+      md: "1rem",
+      lg: "1.6rem",
       xl: "3.2rem",
     },
     weight: {
       light: 300,
       regular: 400,
       bold: 700,
+      black: 900,
     },
   },
   spacing: {
-    xs: "0.4rem",
+    xs: "0.8rem",
     sm: "1.2rem",
     md: "1.6rem",
     lg: "2.4rem",
