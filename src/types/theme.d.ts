@@ -6,11 +6,11 @@ type ColorPalette = {
   dark?: string;
 };
 
-type FontSize = {
+type SizeVariations = {
   xs: string;
-  small: string;
-  medium: string;
-  large: string;
+  sm: string;
+  md: string;
+  lg: string;
   xl: string;
 };
 
@@ -18,18 +18,6 @@ type FontWeight = {
   light: number;
   regular: number;
   bold: number;
-};
-
-type Spacing = {
-  small: string;
-  medium: string;
-  large: string;
-};
-
-type BorderRadius = {
-  small: string;
-  medium: string;
-  large: string;
 };
 
 declare module "styled-components" {
@@ -51,10 +39,10 @@ declare module "styled-components" {
         primary: string;
         secondary: string;
       };
-      size: FontSize;
+      size: SizeVariations;
       weight: FontWeight;
     };
-    spacing: Spacing;
-    borderRadius: BorderRadius;
+    spacing: SizeVariations;
+    borderRadius: SizeVariations;
   }
 }

@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: "Componente/Button",
+  title: "Example/Button",
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -25,8 +25,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     primary: true,
-    label: "Clicar aqui",
-    backgroundColor: "red",
+    label: "Button",
   },
 };
 

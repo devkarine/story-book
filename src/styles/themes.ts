@@ -44,9 +44,9 @@ export const light: DefaultTheme = {
     },
     size: {
       xs: "1rem",
-      small: "1.2rem",
-      medium: "1.6rem",
-      large: "2.4rem",
+      sm: "1.2rem",
+      md: "1.6rem",
+      lg: "2.4rem",
       xl: "3.2rem",
     },
     weight: {
@@ -56,14 +56,18 @@ export const light: DefaultTheme = {
     },
   },
   spacing: {
-    small: "1.2rem",
-    medium: "1.6rem",
-    large: "2.4rem",
+    xs: "0.4rem",
+    sm: "1.2rem",
+    md: "1.6rem",
+    lg: "2.4rem",
+    xl: "3.2rem",
   },
   borderRadius: {
-    small: "0.4rem",
-    medium: "0.8rem",
-    large: "1.2rem",
+    xs: "0.2rem",
+    sm: "0.4rem",
+    md: "0.8rem",
+    lg: "1.2rem",
+    xl: "1.6rem",
   },
 };
 
